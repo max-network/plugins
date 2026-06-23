@@ -34,7 +34,11 @@ still hand them everything you found.
 ## Always establish jurisdiction first
 
 Rights differ by country and often by region. Before researching, pin down where the
-patient is and where the care/insurer is. Route to the most specific jurisdiction:
+patient is and where the care/insurer is, then route to the most specific jurisdiction.
+
+**The `legal` server is the source of truth for which jurisdictions exist:** it lists them
+in its connection instructions and in every tool's `jurisdiction` parameter. Trust that
+live list over any list here. The set it covers today:
 
 - `us` United States (federal), `us/ca` California
 - `eu` European Union (GDPR, fundamental rights, patient mobility)
