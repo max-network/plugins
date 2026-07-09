@@ -8,6 +8,11 @@
       "name": "legal",
       "source": "./legal",
       "description": "Turn your AI into a patient-rights advocate. Bundles the patient-rights skill + the hosted Legal MCP (legal.maxhealth.tech) for multi-jurisdiction primary law. Sign in on first use."
+    },
+    {
+      "name": "drypdf",
+      "source": "./drypdf",
+      "description": "Turn your AI into a librarian for your PDFs. Bundles the DRYPDF skill + the hosted DRYPDF MCP (drypdf.com) so any agent can search, read, upload, and organize your stored PDFs, grounded in their actual text. Sign in and pick your account on first use."
     }
   ]
 }
