@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "drypdf": {
+      "type": "http",
+      "url": "https://drypdf.com/mcp"
+    }
+  }
+}
