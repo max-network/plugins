@@ -23,8 +23,15 @@ tool is scoped to that account - you only ever touch the user's own documents.
 
 ## Tools
 
-- **`search_pdfs`** - ranked, phrase-aware search across the indexed text. Wrap a phrase in
-  "quotes" to require adjacency. Returns docId, filename, score, and a snippet. Start here.
+- **`keyword_search`** - exact keyword & phrase search across the indexed text (lexical
+  ranking). Wrap a phrase in "double quotes" to require those words adjacent and in order. Best
+  when you know the terms, a name, an id, or an exact phrase that appears in the document.
+  Returns docId, filename, score, and a snippet.
+- **`semantic_search`** - meaning-based search using AI embeddings: matches related concepts
+  and paraphrases even when the exact words differ (and across languages). Best for an open
+  question or fuzzy recall where you don't know the wording. Premium (Pro) accounts only;
+  non-Pro accounts get a note to use `keyword_search` instead. Returns docId, filename, a
+  similarity score, and a snippet.
 - **`get_document`** - read a document's full converted text (or a link to the original PDF).
   Ground every answer in what this returns.
 - **`list_documents`** - browse the account's documents, newest first.
@@ -37,8 +44,11 @@ tool is scoped to that account - you only ever touch the user's own documents.
 
 ## How to work
 
-1. **Find, don't guess.** Turn the request into a query, run `search_pdfs`, then open the best
-   hits with `get_document`. Quote what the document says and name the filename.
+1. **Find, don't guess.** Turn the request into a query, then open the best hits with
+   `get_document`. Pick the search tool by the request: use `keyword_search` for known terms, a
+   name, an id, or an exact "quoted phrase"; use `semantic_search` to find by meaning when the
+   wording is uncertain. When one comes back thin, try the other. Quote what the document says
+   and name the filename.
 2. **Answer from the text.** Never assert what a document contains without reading it. If the
    library has nothing relevant, say so plainly rather than inventing.
 3. **Add what's missing.** If the user shares a PDF (a link or a file), offer to `upload_pdf`
