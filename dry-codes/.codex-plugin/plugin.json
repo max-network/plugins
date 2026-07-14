@@ -1,0 +1,23 @@
+{
+  "name": "dry-codes",
+  "version": "0.1.0",
+  "description": "Reuse before you write. Bundles the dry-codes skill + the hosted DRY.codes MCP server (dry.codes) so Codex searches indexed code and docs for an existing implementation before writing a new one, and catches near-duplicates. Sign in on first use and pick which corpus to search — your own indexed repos or the public corpus.",
+  "author": { "name": "Max Health Inc.", "url": "https://dry.codes" },
+  "homepage": "https://dry.codes",
+  "repository": "https://github.com/max-network/plugins",
+  "license": "UNLICENSED",
+  "keywords": ["dry", "reuse", "code-search", "duplication", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.codex.json",
+  "interface": {
+    "displayName": "DRY.codes",
+    "shortDescription": "Reuse before you write — search indexed code & docs.",
+    "longDescription": "Searches DRY.codes (a hosted MCP server) for existing code and docs to reuse, and flags near-duplicates — so Codex looks for an implementation before writing one. Sign in on first use and pick your own indexed repos or the public corpus.",
+    "developerName": "Max Health Inc.",
+    "category": "Productivity",
+    "websiteURL": "https://dry.codes",
+    "brandColor": "#3fb950",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "dry-codes",
+  "description": "Reuse before you write. Bundles the dry-codes skill + the hosted DRY.codes MCP server (dry.codes) so any agent searches indexed code and docs for an existing implementation before writing a new one, and catches near-duplicates. Sign in on first use and pick which corpus to search — your own indexed repos or the public corpus.",
+  "version": "0.1.0",
+  "author": { "name": "Max Health Inc.", "url": "https://dry.codes" },
+  "homepage": "https://dry.codes",
+  "repository": "https://github.com/max-network/plugins",
+  "license": "UNLICENSED"
+}

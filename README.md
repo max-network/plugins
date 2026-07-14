@@ -50,6 +50,46 @@ If your client isn't plugin-aware, add the server directly:
 
 You'll be asked to sign in the first time.
 
+## `dry-codes` — reuse before you write
+
+Helps your AI **reuse existing code and docs instead of rewriting them**. It bundles:
+
+- **The `dry-codes` skill** — before writing any non-trivial function, component, type, or
+  endpoint, the agent searches for an existing implementation to reuse (by text AND by
+  meaning), reads the strongest hits, and checks for near-duplicates before finishing.
+- **The hosted MCP server** — `https://dry.codes/mcp`. On first use you sign in (GitHub) and
+  pick which corpus to search: one of **your own** indexed DRY.codes endpoints, or the
+  **public corpus** (public repos shared on DRY.codes). Manage endpoints at https://dry.codes.
+
+### Install — Claude Code
+
+```
+/plugin marketplace add max-network/plugins
+/plugin install dry-codes@max-network
+```
+
+Then restart Claude Code (or `/reload-plugins`). Try it locally first with
+`claude --plugin-dir ./dry-codes`.
+
+### Install — Codex
+
+```
+codex plugin marketplace add max-network/plugins
+codex plugin add dry-codes@max-network
+```
+
+### Manual MCP config (any MCP client)
+
+```json
+{
+  "mcpServers": {
+    "dry-codes": { "url": "https://dry.codes/mcp" }
+  }
+}
+```
+
+You'll be asked to sign in the first time.
+
 ## Layout
 
 ```
