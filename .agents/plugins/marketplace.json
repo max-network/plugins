@@ -6,8 +6,21 @@
   "plugins": [
     {
       "name": "legal",
-      "source": "./legal",
-      "description": "Turn your AI into a patient-rights advocate. Bundles the patient-rights skill + the hosted Legal MCP (legal.maxhealth.tech) for multi-jurisdiction primary law. Sign in on first use."
+      "source": { "source": "local", "path": "./legal" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Productivity"
+    },
+    {
+      "name": "drypdf",
+      "source": { "source": "local", "path": "./drypdf" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Productivity"
+    },
+    {
+      "name": "dry-codes",
+      "source": { "source": "local", "path": "./dry-codes" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Productivity"
     }
   ]
 }

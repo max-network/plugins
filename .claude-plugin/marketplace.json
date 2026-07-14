@@ -13,6 +13,11 @@
       "name": "drypdf",
       "source": "./drypdf",
       "description": "Turn your AI into a librarian for your PDFs. Bundles the DRYPDF skill + the hosted DRYPDF MCP (drypdf.com) so any agent can search, read, upload, and organize your stored PDFs, grounded in their actual text. Sign in and pick your account on first use."
+    },
+    {
+      "name": "dry-codes",
+      "source": "./dry-codes",
+      "description": "Reuse before you write — search DRY.codes (hosted MCP) for existing code and docs to reuse, and catch near-duplicates. Bundles the dry-codes skill + the DRY.codes MCP; sign in on first use and pick your own indexed repos or the public corpus."
     }
   ]
 }
