@@ -18,6 +18,11 @@
       "name": "dry-codes",
       "source": "./dry-codes",
       "description": "Reuse before you write — search DRY.codes (hosted MCP) for existing code and docs to reuse, and catch near-duplicates. Bundles the dry-codes skill + the DRY.codes MCP; sign in on first use and pick your own indexed repos or the public corpus."
+    },
+    {
+      "name": "proxy-smart",
+      "source": "./proxy-smart",
+      "description": "Administer a SMART on FHIR authorization proxy from your AI. Bundles the proxy-smart admin skill + the hosted proxy-smart MCP (api.proxy-smart.com) to manage SMART apps, client scopes, and healthcare users, read FHIR, and search the platform docs through the proxy's audited admin API. Sign in on first use; admin role required for changes."
     }
   ]
 }
