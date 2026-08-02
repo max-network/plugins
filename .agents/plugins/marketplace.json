@@ -21,6 +21,12 @@
       "source": { "source": "local", "path": "./dry-codes" },
       "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
       "category": "Productivity"
+    },
+    {
+      "name": "proxy-smart",
+      "source": { "source": "local", "path": "./proxy-smart" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Developer Tools"
     }
   ]
 }

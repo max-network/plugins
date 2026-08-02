@@ -1,0 +1,9 @@
+{
+  "name": "proxy-smart",
+  "description": "Administer a SMART on FHIR authorization proxy from your AI. Bundles the proxy-smart admin skill + the hosted proxy-smart MCP server (api.proxy-smart.com) so any agent can manage SMART apps, client scopes, and healthcare users, read FHIR, and search the platform docs — all through the proxy's audited admin API. Sign in on first use; the admin role is required for changes.",
+  "version": "0.1.0",
+  "author": { "name": "Max Health Inc.", "url": "https://proxy-smart.com" },
+  "homepage": "https://proxy-smart.com",
+  "repository": "https://github.com/max-network/plugins",
+  "license": "UNLICENSED"
+}
