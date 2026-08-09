@@ -29,11 +29,12 @@ endpoints at https://dry.codes.
 ## Chain your calls — one lookup is rarely enough
 
 A single search tells you little. The value comes from **chaining** tools: cast a wide
-net, READ the strongest hits, then CONFIRM with a second tool before you act. Treat each
-result as a lead for the next call, not a final answer. Typical chains:
+net, `read_code` the strongest hits, then CONFIRM with a second tool before you act. Treat
+each result as a lead for the next call, not a final answer. Typical chains:
 
-- **Before writing** `semantic_search` or `dry_wand` to find candidates → READ the top
-  files → if two look close, `compare_files` to see how much they overlap → reuse the winner.
+- **Before writing** `semantic_search` or `dry_wand` to find candidates → `read_code` the top
+  hits (path + the line they reported) → if two look close, `compare_files` to see how much
+  they overlap → reuse the winner.
 - **Before deciding** `search_code` with `scope: docs` and `find_file` for an existing ADR,
   README, or convention → follow it instead of re-deciding.
 - **Before consolidating** `list_dry_issues` + `list_semantic_dupes` (both with
@@ -61,6 +62,13 @@ Availability depends on your plan and endpoint; use whatever is exposed.
 - `list_files` — enumerate indexed files (filter by owner/repo/scope/ext) to learn a repo's
   layout before diving in.
 
+**Read what you found (the only tool that returns source):**
+- `read_code` — the source of one indexed file, around the `line` a hit reported. Every other
+  tool answers in paths + line numbers, so this is how a hit becomes a reuse decision: never
+  judge a file by its path alone. Widen `context` to take in a whole function, call it again
+  with another `line` to walk a long file, or pass `ref` for a branch. Reads live from GitHub,
+  so it needs the DRY.codes App connected to that owner.
+
 **Find what repeats (duplication & consolidation):**
 - `list_dry_issues` — precomputed TEXTUAL duplicate pairs (Jaccard), ranked by overlap
   (🔴 large, 🟡 moderate, 🟢 small). Use `cross_repo_only` / `intra_repo_only`, `threshold`.
@@ -84,8 +92,9 @@ Before writing any non-trivial new code:
 
 1. **Search first, by meaning and by text.** `semantic_search` and/or `dry_wand` for an
    existing implementation; `search_code` with `scope: docs` for an existing convention.
-2. **Read and reuse the match.** If a close result exists, READ it and reuse it (import,
-   call, extend, or adapt) instead of writing a parallel version. Cite the file you reused.
+2. **Read and reuse the match.** If a close result exists, `read_code` it (path + the line
+   the hit reported) and reuse it — import, call, extend, or adapt — instead of writing a
+   parallel version. Cite the file you reused.
 3. **Stay consistent.** Match the naming, structure, and patterns you found, so you do not
    introduce a second style for the same thing.
 4. **Check before you finish.** Run `list_dry_issues` (and `list_semantic_dupes` on Pro) to
@@ -119,7 +128,7 @@ evidence is real and repeated.
 ## Examples
 
 - "Add a function to format dates" → `semantic_search`/`dry_wand` for a date formatter →
-  read the hit → reuse it if found.
+  `read_code` the hit → reuse it if found.
 - "Create a CSV parser" → `search_code` for a parser, then `compare_files` on the two
   closest before writing one.
 - "Follow our API conventions" → `search_code` with `scope: docs` / `find_file` for the ADR
