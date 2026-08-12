@@ -1,7 +1,7 @@
 {
   "name": "legal",
-  "description": "Turn your AI into a patient-rights advocate. Bundles the patient-rights skill + the hosted Legal MCP server (legal.maxhealth.tech) so any agent can ground patient rights, deadlines, and remedies in primary law across multiple US, EU, and national jurisdictions. The server advertises the jurisdictions it currently covers. Sign in on first use.",
-  "version": "0.1.0",
+  "description": "Legal research tools for AI. Bundles the hosted Legal MCP server (legal.maxhealth.tech) with two skills: legal-research, for grounding any legal question in the actual provision text and case law, and patient-rights-advocate, for helping a patient act on a denied treatment, a records refusal or a coverage dispute. Covers Austrian, German, EU, Schengen cross-border, US federal and US state law, including regional codes. The server advertises the jurisdictions it currently covers. Sign in on first use.",
+  "version": "0.2.0",
   "author": { "name": "Max Health Inc.", "url": "https://legal.maxhealth.tech" },
   "homepage": "https://legal.maxhealth.tech",
   "repository": "https://github.com/max-network/plugins",
