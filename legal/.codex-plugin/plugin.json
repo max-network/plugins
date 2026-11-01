@@ -1,6 +1,6 @@
 {
-  "name": "legal",
-  "version": "0.2.0",
+  "name": "legal-research-max-health",
+  "version": "0.3.0",
   "description": "Legal research tools for AI. Bundles the hosted Legal MCP server (legal.maxhealth.tech) with two skills: legal-research, for grounding any legal question in the actual provision text and case law, and patient-rights-advocate, for helping a patient act on a denied treatment, a records refusal or a coverage dispute. Covers Austrian, German, EU, Schengen cross-border, US federal and US state law, including regional codes. The server advertises the jurisdictions it currently covers. Sign in on first use.",
   "author": { "name": "Max Health Inc.", "url": "https://legal.maxhealth.tech" },
   "homepage": "https://legal.maxhealth.tech",
@@ -10,7 +10,7 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.codex.json",
   "interface": {
-    "displayName": "Legal Research Tools for AI",
+    "displayName": "Legal Research by Max Health",
     "shortDescription": "Answer legal questions from primary law, with citations.",
     "longDescription": "Grounds legal questions in the actual provision text and case law across Austrian, German, EU, Schengen cross-border, US federal and US state law, including regional codes, via the hosted Legal MCP server. Includes a patient-rights advocate skill for healthcare disputes. The server advertises the jurisdictions it currently covers. Sign in on first use.",
     "developerName": "Max Health Inc.",
