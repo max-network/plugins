@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "scribe": {
+      "type": "http",
+      "url": "https://scribe.maxhealth.tech/mcp"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "scribe",
+  "version": "0.1.0",
+  "description": "Turn what a patient describes, or a clinical document they hand over, into structured medical records a human can check. Bundles the clinical-scribe skill + the hosted Scribe MCP server (scribe.maxhealth.tech), which validates every resource against its IPS profile and verifies codes against a real terminology server. Nothing is saved: each result is a draft for someone to accept. Sign in with your Max Health account on first use.",
+  "author": {
+    "name": "Max Health Inc.",
+    "url": "https://scribe.maxhealth.tech"
+  },
+  "homepage": "https://scribe.maxhealth.tech",
+  "repository": "https://github.com/max-network/plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "fhir",
+    "clinical",
+    "scribe",
+    "dictation",
+    "document",
+    "terminology",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.codex.json",
+  "interface": {
+    "displayName": "Scribe by Max Health",
+    "shortDescription": "Describe what happened, get back records someone can check.",
+    "longDescription": "Describe how you are feeling, or hand over a discharge summary, a lab report or a letter, and Scribe turns it into proper clinical records. Every resource is validated against its International Patient Summary profile and repaired until it passes, and codes are verified against a terminology server rather than recalled. Nothing is saved: what comes back is a draft for you or your clinician to look over, and anything read out of a document keeps that document attached as its source.",
+    "developerName": "Max Health Inc.",
+    "category": "Productivity",
+    "websiteURL": "https://scribe.maxhealth.tech",
+    "brandColor": "#1f6f5c",
+    "composerIcon": "./assets/icon.png"
+  }
+}

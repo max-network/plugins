@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "scribe",
+  "displayName": "Scribe by Max Health",
+  "description": "Turn what a patient describes, or a clinical document they hand over, into structured medical records a human can check. Bundles the clinical-scribe skill + the hosted Scribe MCP server (scribe.maxhealth.tech), which validates every resource against its IPS profile and verifies codes against a real terminology server. Nothing is saved: each result is a draft for someone to accept. Sign in with your Max Health account on first use.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Max Health Inc.",
+    "url": "https://scribe.maxhealth.tech"
+  },
+  "homepage": "https://scribe.maxhealth.tech",
+  "repository": "https://github.com/max-network/plugins",
+  "license": "UNLICENSED",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://maxhealth.tech/privacy",
+  "supportUrl": "https://github.com/max-network/plugins/issues",
+  "documentationUrl": "https://github.com/max-network/plugins/tree/main/scribe#readme",
+  "termsOfServiceUrl": "https://maxhealth.tech/terms",
+  "keywords": [
+    "fhir",
+    "clinical",
+    "scribe",
+    "dictation",
+    "document",
+    "terminology",
+    "mcp"
+  ]
+}

@@ -6,27 +6,63 @@
   "plugins": [
     {
       "name": "legal-research",
-      "source": { "source": "local", "path": "./legal" },
-      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
-      "category": "Productivity"
-    },
-    {
-      "name": "drypdf",
-      "source": { "source": "local", "path": "./drypdf" },
-      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
-      "category": "Productivity"
-    },
-    {
-      "name": "dry-codes",
-      "source": { "source": "local", "path": "./dry-codes" },
-      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "source": {
+        "source": "local",
+        "path": "./legal"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Productivity"
     },
     {
       "name": "chess",
-      "source": { "source": "local", "path": "./chess" },
-      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "source": {
+        "source": "local",
+        "path": "./chess"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Games"
+    },
+    {
+      "name": "scribe",
+      "source": {
+        "source": "local",
+        "path": "./scribe"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dry-codes",
+      "source": {
+        "source": "local",
+        "path": "./dry-codes"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "drypdf",
+      "source": {
+        "source": "local",
+        "path": "./drypdf"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

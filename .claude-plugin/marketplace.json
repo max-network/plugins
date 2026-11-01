@@ -1,30 +1,77 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "max-network",
-  "description": "Hosted MCP servers bundled with skills: legal research from primary law, code reuse with DRY.codes, a PDF librarian with DRYPDF, and a chess board with an engine coach.",
+  "description": "Hosted MCP servers bundled with skills: legal research from primary law, chess with an engine coach, a clinical scribe, code reuse with DRY.codes, and a PDF librarian with DRYPDF.",
   "owner": {
-    "name": "max-network"
+    "name": "max-network",
+    "url": "https://github.com/max-network/plugins"
   },
   "plugins": [
     {
       "name": "legal-research",
       "source": "./legal",
-      "description": "Legal research tools for AI. Bundles the hosted Legal MCP server (legal.maxhealth.tech) with a legal-research skill and a patient-rights-advocate skill, so answers rest on the actual provision text and case law. Sign in on first use."
-    },
-    {
-      "name": "drypdf",
-      "source": "./drypdf",
-      "description": "Turn your AI into a librarian for your PDFs. Bundles the DRYPDF skill + the hosted DRYPDF MCP (drypdf.com) so any agent can search, read, upload, and organize your stored PDFs, grounded in their actual text. Sign in and pick your account on first use."
-    },
-    {
-      "name": "dry-codes",
-      "source": "./dry-codes",
-      "description": "Reuse before you write. Search DRY.codes (hosted MCP) for existing code and docs to reuse, and catch near-duplicates. Bundles the dry-codes skill + the DRY.codes MCP; sign in on first use and pick your own indexed repos or the public corpus."
+      "description": "Multi-jurisdiction legal research and the AI patient-rights advocate.",
+      "displayName": "Legal Research Tools for AI",
+      "category": "Productivity",
+      "keywords": [
+        "legal",
+        "patient",
+        "professional",
+        "patient-rights-advocate",
+        "legal-research"
+      ],
+      "homepage": "https://legal.maxhealth.tech"
     },
     {
       "name": "chess",
       "source": "./chess",
-      "description": "Play chess in the conversation on a real interactive board, against Stockfish, the model itself, or people in a live lobby, then have the game explained. Bundles the chess-coaching skill + the hosted chess MCP (chess.maxhealth.tech). Playing needs no account."
+      "description": "Real-time chess: a shared lobby and live games, playable from any MCP client.",
+      "displayName": "Chess",
+      "category": "Games",
+      "keywords": [
+        "chess",
+        "patient",
+        "professional",
+        "chess-coaching"
+      ],
+      "homepage": "https://chess.maxhealth.tech"
+    },
+    {
+      "name": "scribe",
+      "source": "./scribe",
+      "description": "Turns a clinical narrative or a clinical document into FHIR R4 resources, validated against their IPS profiles with codes checked against a terminology server.",
+      "displayName": "Scribe",
+      "category": "Productivity",
+      "keywords": [
+        "scribe",
+        "patient",
+        "professional",
+        "clinical-scribe"
+      ]
+    },
+    {
+      "name": "dry-codes",
+      "source": "./dry-codes",
+      "description": "Reuse before you write. Indexes your code and docs, then finds them by text and by meaning so an agent reuses what exists instead of regenerating it, and catches near-duplicates before they land.",
+      "displayName": "DRY.codes",
+      "category": "Developer Tools",
+      "keywords": [
+        "dry-codes",
+        "max-network"
+      ],
+      "homepage": "https://dry.codes"
+    },
+    {
+      "name": "drypdf",
+      "source": "./drypdf",
+      "description": "A librarian for your PDFs. Search, read, upload and organize stored documents, grounded in their actual text, from any agent.",
+      "displayName": "DRYPDF",
+      "category": "Developer Tools",
+      "keywords": [
+        "drypdf",
+        "max-network"
+      ],
+      "homepage": "https://drypdf.com"
     }
   ]
 }
