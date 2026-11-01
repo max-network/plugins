@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "legal-research-max-health",
+      "name": "legal-research",
       "source": { "source": "local", "path": "./legal" },
       "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
       "category": "Productivity"

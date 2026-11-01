@@ -29,14 +29,14 @@ Claude Code:
 
 ```
 /plugin marketplace add max-network/plugins
-/plugin install legal-research-max-health@max-network
+/plugin install legal-research@max-network
 ```
 
 Codex:
 
 ```
 codex plugin marketplace add max-network/plugins
-codex plugin add legal-research-max-health@max-network
+codex plugin add legal-research@max-network
 ```
 
 Restart the client after installing. To try it from a checkout first, run
