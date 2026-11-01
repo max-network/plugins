@@ -1,4 +1,4 @@
-# Legal Research Tools for AI
+# Legal Research by Max Health
 
 Answers legal questions from primary law, with citations. The plugin bundles the hosted
 Legal MCP server and two skills that tell your agent how to use it.
@@ -29,14 +29,14 @@ Claude Code:
 
 ```
 /plugin marketplace add max-network/plugins
-/plugin install legal@max-network
+/plugin install legal-research-max-health@max-network
 ```
 
 Codex:
 
 ```
 codex plugin marketplace add max-network/plugins
-codex plugin add legal@max-network
+codex plugin add legal-research-max-health@max-network
 ```
 
 Restart the client after installing. To try it from a checkout first, run
