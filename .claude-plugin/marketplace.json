@@ -1,5 +1,7 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "max-network",
+  "description": "Hosted MCP servers bundled with skills: legal research from primary law, code reuse with DRY.codes, and a PDF librarian with DRYPDF.",
   "owner": {
     "name": "max-network"
   },
@@ -7,7 +9,7 @@
     {
       "name": "legal",
       "source": "./legal",
-      "description": "Turn your AI into a patient-rights advocate. Bundles the patient-rights skill + the hosted Legal MCP (legal.maxhealth.tech) for multi-jurisdiction primary law. Sign in on first use."
+      "description": "Legal research tools for AI. Bundles the hosted Legal MCP server (legal.maxhealth.tech) with a legal-research skill and a patient-rights-advocate skill, so answers rest on the actual provision text and case law. Sign in on first use."
     },
     {
       "name": "drypdf",
@@ -17,7 +19,7 @@
     {
       "name": "dry-codes",
       "source": "./dry-codes",
-      "description": "Reuse before you write — search DRY.codes (hosted MCP) for existing code and docs to reuse, and catch near-duplicates. Bundles the dry-codes skill + the DRY.codes MCP; sign in on first use and pick your own indexed repos or the public corpus."
+      "description": "Reuse before you write. Search DRY.codes (hosted MCP) for existing code and docs to reuse, and catch near-duplicates. Bundles the dry-codes skill + the DRY.codes MCP; sign in on first use and pick your own indexed repos or the public corpus."
     }
   ]
 }

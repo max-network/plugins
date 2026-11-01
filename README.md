@@ -1,106 +1,43 @@
 # Max Network plugins
 
-A plugin marketplace for [Claude Code](https://claude.com/claude-code) and Codex.
+A plugin marketplace for [Claude Code](https://claude.com/claude-code) and Codex. Each plugin
+lives in its own folder, bundles a hosted MCP server with one or more skills, and has its own
+README.
 
-## `legal` — patient-rights advocate
+| Plugin | Folder | What it does |
+| --- | --- | --- |
+| `legal` | [`legal/`](legal/README.md) | Answers legal questions from primary law and case law, with citations, and helps patients act on healthcare disputes. |
+| `dry-codes` | [`dry-codes/`](dry-codes/README.md) | Finds existing code and docs to reuse before the agent writes new code, and catches near-duplicates. |
+| `drypdf` | [`drypdf/`](drypdf/README.md) | Searches, reads, uploads and organizes the PDFs in your DRYPDF account. |
 
-Turns your AI into a **patient-rights advocate**. It bundles:
+## Install
 
-- **The `patient-rights-advocate` skill** — when you describe a healthcare problem (a denied
-  treatment or claim, refused medical records, a consent/privacy issue, a billing dispute,
-  poor care, discrimination, cross-border care), the agent finds the law on your side and
-  helps you act on it.
-- **The hosted MCP server** — `https://legal.maxhealth.tech/mcp`, covering primary law and
-  case law across the **US, EU, Austria, Germany, and the Netherlands**. On first use you
-  sign in (Google or Max Health). US federal + EU law are included free; US state and EU
-  member-state laws are add-ons.
-
-### Install — Claude Code
+Claude Code:
 
 ```
 /plugin marketplace add max-network/plugins
-/plugin install legal@max-network
+/plugin install <plugin>@max-network
 ```
 
-Then restart Claude Code (or `/reload-plugins`). Try it locally first with
-`claude --plugin-dir ./legal`.
-
-### Install — Codex
+Codex:
 
 ```
 codex plugin marketplace add max-network/plugins
-codex plugin add legal@max-network
+codex plugin add <plugin>@max-network
 ```
 
-`marketplace add` registers the source; `plugin add` installs the plugin
-(`legal@max-network` = the `legal` plugin from the `max-network` marketplace). Restart
-Codex after installing.
-
-### Manual MCP config (any MCP client)
-
-If your client isn't plugin-aware, add the server directly:
-
-```json
-{
-  "mcpServers": {
-    "legal": { "url": "https://legal.maxhealth.tech/mcp" }
-  }
-}
-```
-
-You'll be asked to sign in the first time.
-
-## `dry-codes` — reuse before you write
-
-Helps your AI **reuse existing code and docs instead of rewriting them**. It bundles:
-
-- **The `dry-codes` skill** — before writing any non-trivial function, component, type, or
-  endpoint, the agent searches for an existing implementation to reuse (by text AND by
-  meaning), reads the strongest hits, and checks for near-duplicates before finishing.
-- **The hosted MCP server** — `https://dry.codes/mcp`. On first use you sign in (GitHub) and
-  pick which corpus to search: one of **your own** indexed DRY.codes endpoints, or the
-  **public corpus** (public repos shared on DRY.codes). Manage endpoints at https://dry.codes.
-
-### Install — Claude Code
-
-```
-/plugin marketplace add max-network/plugins
-/plugin install dry-codes@max-network
-```
-
-Then restart Claude Code (or `/reload-plugins`). Try it locally first with
-`claude --plugin-dir ./dry-codes`.
-
-### Install — Codex
-
-```
-codex plugin marketplace add max-network/plugins
-codex plugin add dry-codes@max-network
-```
-
-### Manual MCP config (any MCP client)
-
-```json
-{
-  "mcpServers": {
-    "dry-codes": { "url": "https://dry.codes/mcp" }
-  }
-}
-```
-
-You'll be asked to sign in the first time.
+Replace `<plugin>` with `legal`, `dry-codes` or `drypdf`, then restart the client.
 
 ## Layout
 
 ```
-.claude-plugin/marketplace.json     # Claude Code marketplace
-.agents/plugins/marketplace.json    # Codex marketplace
-legal/                              # the plugin
-├── .claude-plugin/plugin.json      # Claude Code manifest
-├── .codex-plugin/plugin.json       # Codex manifest
-├── .mcp.json                       # Claude: { mcpServers: { legal: { type: http, url } } }
-├── .mcp.codex.json                 # Codex MCP server config
-└── skills/patient-rights-advocate/SKILL.md
+.claude-plugin/marketplace.json     Claude Code marketplace
+.agents/plugins/marketplace.json    Codex marketplace
+legal/                              one plugin per folder
+dry-codes/
+drypdf/
 ```
 
-Learn more: https://legal.maxhealth.tech
+Every plugin folder holds `.claude-plugin/plugin.json`, `.codex-plugin/plugin.json`, `.mcp.json`,
+`.mcp.codex.json` and `skills/`. Each folder is a self-contained plugin, so point a directory
+submission or `claude --plugin-dir` at the plugin folder, never the repo root.
