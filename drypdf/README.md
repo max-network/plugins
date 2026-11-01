@@ -14,8 +14,7 @@ upload and organize the PDFs stored in your DRYPDF account, and answer from thei
 
 You sign in the first time the agent calls the server, and pick the account (personal or a
 team) the connection uses. Every tool is scoped to that account. Searches, and the PDFs you ask
-the agent to upload, go to `drypdf.com`. Details are in the privacy policy at
-https://drypdf.com/privacy.
+the agent to upload, go to `drypdf.com`. Details are in the [privacy policy](https://drypdf.com/privacy).
 
 ## Install
 

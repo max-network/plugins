@@ -16,6 +16,7 @@
     "developerName": "Max Health Inc.",
     "category": "Productivity",
     "websiteURL": "https://legal.maxhealth.tech",
-    "brandColor": "#1a56db"
+    "brandColor": "#1a56db",
+    "composerIcon": "./assets/icon.png"
   }
 }

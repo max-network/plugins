@@ -16,6 +16,7 @@
     "developerName": "Max Health Inc.",
     "category": "Games",
     "websiteURL": "https://chess.maxhealth.tech",
-    "brandColor": "#7c3aed"
+    "brandColor": "#7c3aed",
+    "composerIcon": "./assets/icon.png"
   }
 }

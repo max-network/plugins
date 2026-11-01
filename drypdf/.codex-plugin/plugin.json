@@ -16,6 +16,7 @@
     "developerName": "Maximilian Nussbaumer",
     "category": "Productivity",
     "websiteURL": "https://drypdf.com",
-    "brandColor": "#c0392b"
+    "brandColor": "#c0392b",
+    "composerIcon": "./assets/icon.png"
   }
 }

@@ -8,5 +8,7 @@
   "homepage": "https://chess.maxhealth.tech",
   "repository": "https://github.com/max-network/plugins",
   "license": "MIT",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://chess.maxhealth.tech/privacy",
   "keywords": ["chess", "game", "stockfish", "coaching", "analysis", "mcp"]
 }
