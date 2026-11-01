@@ -7,5 +7,8 @@
   "repository": "https://github.com/max-network/plugins",
   "license": "UNLICENSED",
   "icon": "./assets/icon.png",
-  "privacyPolicyUrl": "https://legal.maxhealth.tech/privacy"
+  "privacyPolicyUrl": "https://legal.maxhealth.tech/privacy",
+  "supportUrl": "https://github.com/max-network/plugins/issues",
+  "documentationUrl": "https://github.com/max-network/plugins/tree/main/legal#readme",
+  "termsOfServiceUrl": "https://legal.maxhealth.tech/terms"
 }

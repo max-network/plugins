@@ -10,5 +10,8 @@
   "license": "MIT",
   "icon": "./assets/icon.png",
   "privacyPolicyUrl": "https://chess.maxhealth.tech/privacy",
+  "supportUrl": "https://github.com/max-network/plugins/issues",
+  "documentationUrl": "https://github.com/max-network/plugins/tree/main/chess#readme",
+  "termsOfServiceUrl": "https://chess.maxhealth.tech/terms",
   "keywords": ["chess", "game", "stockfish", "coaching", "analysis", "mcp"]
 }
