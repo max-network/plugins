@@ -10,7 +10,7 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.codex.json",
   "interface": {
-    "displayName": "DRYPDF — PDF Librarian",
+    "displayName": "DRYPDF",
     "shortDescription": "Turn your AI into a librarian for your PDFs.",
     "longDescription": "Search, read, upload, and organize your stored PDFs from your agent, grounded in their actual text, via the hosted DRYPDF MCP server (drypdf.com). Sign in and pick your account on first use.",
     "developerName": "Maximilian Nussbaumer",
