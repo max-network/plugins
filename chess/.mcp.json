@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chess": {
+      "type": "http",
+      "url": "https://chess.maxhealth.tech/mcp"
+    }
+  }
+}

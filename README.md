@@ -9,6 +9,7 @@ README.
 | `legal` | [`legal/`](legal/README.md) | Answers legal questions from primary law and case law, with citations, and helps patients act on healthcare disputes. |
 | `dry-codes` | [`dry-codes/`](dry-codes/README.md) | Finds existing code and docs to reuse before the agent writes new code, and catches near-duplicates. |
 | `drypdf` | [`drypdf/`](drypdf/README.md) | Searches, reads, uploads and organizes the PDFs in your DRYPDF account. |
+| `chess` | [`chess/`](chess/README.md) | Plays chess on an interactive board against Stockfish, the model or people in a live lobby, then explains the game. |
 
 ## Install
 
@@ -26,7 +27,7 @@ codex plugin marketplace add max-network/plugins
 codex plugin add <plugin>@max-network
 ```
 
-Replace `<plugin>` with `legal`, `dry-codes` or `drypdf`, then restart the client.
+Replace `<plugin>` with `legal`, `dry-codes`, `drypdf` or `chess`, then restart the client.
 
 ## Layout
 
@@ -36,6 +37,7 @@ Replace `<plugin>` with `legal`, `dry-codes` or `drypdf`, then restart the clien
 legal/                              one plugin per folder
 dry-codes/
 drypdf/
+chess/
 ```
 
 Every plugin folder holds `.claude-plugin/plugin.json`, `.codex-plugin/plugin.json`, `.mcp.json`,
