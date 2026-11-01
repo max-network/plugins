@@ -5,5 +5,7 @@
   "author": { "name": "Maximilian Nussbaumer", "url": "https://dry.codes" },
   "homepage": "https://dry.codes",
   "repository": "https://github.com/max-network/plugins",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://dry.codes/privacy"
 }

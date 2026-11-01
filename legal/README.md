@@ -21,7 +21,7 @@ are add-ons is listed at https://legal.maxhealth.tech/pricing.
 You sign in with OAuth the first time the agent calls the server. Nothing is stored in
 the plugin itself. Your questions and the tool calls they produce go to
 `legal.maxhealth.tech`, which fetches the matching law and case law from the official public
-sources. Details are in the privacy policy at https://legal.maxhealth.tech/privacy.
+sources. Details are in the [privacy policy](https://legal.maxhealth.tech/privacy).
 
 ## Install
 

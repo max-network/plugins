@@ -15,8 +15,7 @@ before it writes something new, and catch near-duplicates before it finishes.
 You sign in with GitHub the first time the agent calls the server. You then pick which corpus
 to search: one of your own indexed DRY.codes endpoints, or the public corpus of repos shared on
 DRY.codes. Manage endpoints at https://dry.codes. Search queries, and any code the agent asks
-DRY.codes to compare, go to `dry.codes`. Details are in the privacy policy at
-https://dry.codes/privacy.
+DRY.codes to compare, go to `dry.codes`. Details are in the [privacy policy](https://dry.codes/privacy).
 
 ## Install
 

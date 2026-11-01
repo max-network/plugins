@@ -20,7 +20,7 @@ player's recent games by handle. The server lists its tools when your agent conn
 Playing needs no account. Signing in with Max Health adds ranked ELO and stored match history,
 and lets the agent analyse your own past games. Moves, game state and lobby presence go to
 `chess.maxhealth.tech`. Looking up a chess.com or Lichess handle fetches that player's public
-games from those sites. Details are in the privacy policy at https://chess.maxhealth.tech/privacy.
+games from those sites. Details are in the [privacy policy](https://chess.maxhealth.tech/privacy).
 
 ## Install
 

@@ -5,5 +5,7 @@
   "author": { "name": "Max Health Inc.", "url": "https://legal.maxhealth.tech" },
   "homepage": "https://legal.maxhealth.tech",
   "repository": "https://github.com/max-network/plugins",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://legal.maxhealth.tech/privacy"
 }
