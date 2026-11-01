@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "legal-research-max-health",
+      "name": "legal-research",
       "source": "./legal",
       "description": "Legal research tools for AI. Bundles the hosted Legal MCP server (legal.maxhealth.tech) with a legal-research skill and a patient-rights-advocate skill, so answers rest on the actual provision text and case law. Sign in on first use."
     },

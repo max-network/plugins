@@ -6,7 +6,7 @@ README.
 
 | Plugin | Folder | What it does |
 | --- | --- | --- |
-| `legal-research-max-health` | [`legal/`](legal/README.md) | Answers legal questions from primary law and case law, with citations, and helps patients act on healthcare disputes. |
+| `legal-research` | [`legal/`](legal/README.md) | Answers legal questions from primary law and case law, with citations, and helps patients act on healthcare disputes. |
 | `dry-codes` | [`dry-codes/`](dry-codes/README.md) | Finds existing code and docs to reuse before the agent writes new code, and catches near-duplicates. |
 | `drypdf` | [`drypdf/`](drypdf/README.md) | Searches, reads, uploads and organizes the PDFs in your DRYPDF account. |
 | `chess` | [`chess/`](chess/README.md) | Plays chess on an interactive board against Stockfish, the model or people in a live lobby, then explains the game. |
@@ -27,7 +27,7 @@ codex plugin marketplace add max-network/plugins
 codex plugin add <plugin>@max-network
 ```
 
-Replace `<plugin>` with `legal-research-max-health`, `dry-codes`, `drypdf` or `chess`, then restart the client.
+Replace `<plugin>` with `legal-research`, `dry-codes`, `drypdf` or `chess`, then restart the client.
 
 ## Layout
 
