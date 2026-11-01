@@ -16,10 +16,12 @@ including regional codes. The server lists the jurisdictions it currently covers
 agent connects, so that list is always current. Which jurisdictions are included and which
 are add-ons is listed at https://legal.maxhealth.tech/pricing.
 
-## Sign-in
+## Sign-in and data
 
 You sign in with OAuth the first time the agent calls the server. Nothing is stored in
-the plugin itself.
+the plugin itself. Your questions and the tool calls they produce go to
+`legal.maxhealth.tech`, which fetches the matching law and case law from the official public
+sources. Details are in the privacy policy at https://legal.maxhealth.tech/privacy.
 
 ## Install
 

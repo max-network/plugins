@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "max-network",
-  "description": "Hosted MCP servers bundled with skills: legal research from primary law, code reuse with DRY.codes, and a PDF librarian with DRYPDF.",
+  "description": "Hosted MCP servers bundled with skills: legal research from primary law, code reuse with DRY.codes, a PDF librarian with DRYPDF, and a chess board with an engine coach.",
   "owner": {
     "name": "max-network"
   },
@@ -20,6 +20,11 @@
       "name": "dry-codes",
       "source": "./dry-codes",
       "description": "Reuse before you write. Search DRY.codes (hosted MCP) for existing code and docs to reuse, and catch near-duplicates. Bundles the dry-codes skill + the DRY.codes MCP; sign in on first use and pick your own indexed repos or the public corpus."
+    },
+    {
+      "name": "chess",
+      "source": "./chess",
+      "description": "Play chess in the conversation on a real interactive board, against Stockfish, the model itself, or people in a live lobby, then have the game explained. Bundles the chess-coaching skill + the hosted chess MCP (chess.maxhealth.tech). Playing needs no account."
     }
   ]
 }

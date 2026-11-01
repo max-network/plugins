@@ -10,11 +10,13 @@ before it writes something new, and catch near-duplicates before it finishes.
 | `dry-codes` MCP server (`https://dry.codes/mcp`) | Searches indexed code and docs (READMEs, ADRs, conventions) by text and by meaning, and reports duplication. |
 | `dry-codes` skill | Makes the agent search, read the strongest hits and check for duplicates before it writes a new function, component, type or endpoint. |
 
-## Sign-in
+## Sign-in and data
 
 You sign in with GitHub the first time the agent calls the server. You then pick which corpus
 to search: one of your own indexed DRY.codes endpoints, or the public corpus of repos shared on
-DRY.codes. Manage endpoints at https://dry.codes.
+DRY.codes. Manage endpoints at https://dry.codes. Search queries, and any code the agent asks
+DRY.codes to compare, go to `dry.codes`. Details are in the privacy policy at
+https://dry.codes/privacy.
 
 ## Install
 
