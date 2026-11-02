@@ -1,5 +1,6 @@
 {
   "name": "drypdf",
+  "displayName": "DRYPDF",
   "description": "Turn your AI into a librarian for your PDFs. Bundles the DRYPDF skill + the hosted DRYPDF MCP server (drypdf.com) so any agent can search, read, upload, and organize your stored PDFs, grounded in their actual text. Sign in and pick your account on first use.",
   "version": "0.1.0",
   "author": { "name": "Maximilian Nussbaumer", "url": "https://drypdf.com" },

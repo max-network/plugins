@@ -11,7 +11,7 @@
       "name": "legal-research",
       "source": "./legal",
       "description": "Multi-jurisdiction legal research and the AI patient-rights advocate.",
-      "displayName": "Legal Research Tools for AI",
+      "displayName": "Legal Research by Max Health",
       "category": "Productivity",
       "keywords": [
         "legal",
@@ -26,7 +26,7 @@
       "name": "chess",
       "source": "./chess",
       "description": "Real-time chess: a shared lobby and live games, playable from any MCP client.",
-      "displayName": "Chess",
+      "displayName": "Chess by Max Health",
       "category": "Games",
       "keywords": [
         "chess",
@@ -40,7 +40,7 @@
       "name": "scribe",
       "source": "./scribe",
       "description": "Turns a clinical narrative or a clinical document into FHIR R4 resources, validated against their IPS profiles with codes checked against a terminology server.",
-      "displayName": "Scribe",
+      "displayName": "Scribe by Max Health",
       "category": "Productivity",
       "keywords": [
         "scribe",
@@ -66,7 +66,7 @@
       "source": "./drypdf",
       "description": "A librarian for your PDFs. Search, read, upload and organize stored documents, grounded in their actual text, from any agent.",
       "displayName": "DRYPDF",
-      "category": "Developer Tools",
+      "category": "Productivity",
       "keywords": [
         "drypdf",
         "max-network"
