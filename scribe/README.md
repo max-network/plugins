@@ -19,10 +19,15 @@ your agent connects.
 ## Sign-in and data
 
 You sign in with your Max Health account the first time the agent calls the server. The text or
-document you hand over goes to `scribe.maxhealth.tech`, which sends it to the Max Health model
-gateway (`llm-gateway.maxhealth.tech`) to draft the records and looks codes up on the Max Health
-terminology server (`tx.maxhealth.tech`). A PDF without a text layer is read with Cloudflare
-Workers AI. Model use is metered against your Max Health plan. Details are in the
+document you hand over goes to `scribe.maxhealth.tech`, which also reads the patient's existing
+record, with your authorization, so the draft does not repeat what is already there. Both go to the
+Max Health model gateway (`llm-gateway.maxhealth.tech`) to draft the records, and codes are looked
+up on the Max Health terminology server (`tx.maxhealth.tech`). A PDF without a text layer is read
+with Cloudflare Workers AI. Scribe stores nothing and writes to no record: you review the draft and
+save it yourself. Model use is metered against your Max Health plan.
+
+The AI providers that can receive the data are listed live on the
+[Service providers](https://maxhealth.tech/subprocessors) page. Details are in the
 [privacy policy](https://maxhealth.tech/privacy).
 
 ## Install
