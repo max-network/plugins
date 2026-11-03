@@ -44,16 +44,21 @@ the candidates rather than picking one silently.
 
 ## Use the tool that matches the question
 
-- A question in words, or you do not yet know the provision: **search**.
-- You know the citation and need the operative text: **provision**.
-- Whether courts have decided it, and how: **case_law**, then **get_case** for the full
-  decision.
-- How something is actually done, step by step: **procedure**.
+- You know the citation and need the operative text: **provision**, directly.
+- A question in words, or you do not yet know the provision: **search** what has already
+  been fetched, and when that is thin, fetch live with **provision** or **case_law**.
+- Whether courts have decided it, and how: **case_law** (with the provision cited exactly),
+  then **get_case** for the full decision.
+- How something is actually done, step by step: **procedure**. Pass the provisions you have
+  established (filing, deadlines, the remedy at each instance) so every step is checked
+  against their text.
 - The same question across two jurisdictions: **compare**, rather than two searches you
   reconcile by hand.
 
 Chain them. A search that names a provision is a lead to fetch the provision, and a
-provision worth relying on is worth checking for case law that narrows it.
+provision worth relying on is worth checking for case law that narrows it. A "source
+unavailable" answer means the register did not respond: retry, and never read it as the
+law being silent.
 
 ## Answer in a form the reader can act on and verify
 
