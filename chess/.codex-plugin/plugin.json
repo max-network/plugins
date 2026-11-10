@@ -1,6 +1,6 @@
 {
   "name": "chess",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Play chess in the conversation on a real interactive board, against the built-in Stockfish engine, against the model itself, or live against other people in a shared lobby. Bundles the chess-coaching skill + the hosted chess MCP server (chess.maxhealth.tech), which also analyses finished games and any public chess.com or Lichess player's recent games.",
   "author": { "name": "Max Health Inc.", "url": "https://chess.maxhealth.tech" },
   "homepage": "https://chess.maxhealth.tech",

@@ -5,7 +5,7 @@ interface:
   display_name: "DRY.codes"
   short_description: "Reuse before you write — search indexed code & docs."
   icon_small: "./assets/icon.png"
-  icon_large: "./assets/logo.svg"
+  icon_large: "./assets/icon.png"
   brand_color: "#3fb950"
 ---
 
