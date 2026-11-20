@@ -11,6 +11,7 @@ README.
 | `drypdf` | [`drypdf/`](drypdf/README.md) | Searches, reads, uploads and organizes the PDFs in your DRYPDF account. |
 | `chess` | [`chess/`](chess/README.md) | Plays chess on an interactive board against Stockfish, the model or people in a live lobby, then explains the game. |
 | `scribe` | [`scribe/`](scribe/README.md) | Turns what a patient describes, or a clinical document, into structured records someone checks before anything is saved. |
+| `kallikrat` | [`kallikrat/`](kallikrat/README.md) | Draws and edits construction plans as IFC models, shows them in 3D, records what was built differently and issues revisions. |
 
 ## Install
 
@@ -28,7 +29,7 @@ codex plugin marketplace add max-network/plugins
 codex plugin add <plugin>@max-network
 ```
 
-Replace `<plugin>` with `legal-research`, `dry-codes`, `drypdf`, `chess` or `scribe`, then restart the client.
+Replace `<plugin>` with `legal-research`, `dry-codes`, `drypdf`, `chess`, `scribe` or `kallikrat`, then restart the client.
 
 ## Layout
 
@@ -40,12 +41,17 @@ dry-codes/
 drypdf/
 chess/
 scribe/
+kallikrat/
 ```
 
 Every plugin folder holds `.claude-plugin/plugin.json`, `.codex-plugin/plugin.json`, `.mcp.json`,
 `.mcp.codex.json` and `skills/`. Each folder is a self-contained plugin, so point a directory
 submission or `claude --plugin-dir` at the plugin folder, never the repo root.
 
-Both marketplace files are generated from the Max Health product catalog, which decides which
-plugins are listed and how they are described. Edit the catalog and regenerate rather than
-changing them by hand; a scheduled check flags any drift.
+Both marketplace files are edited directly in this repo. When you add, rename or describe a
+plugin, update its entry in both files alongside its folder, keep each entry's `name` and
+category in step with the folder's `plugin.json` files, and run `claude plugin validate .`
+before you push.
+
+A private marketplace references these folders via `git-subdir`, so treat a folder name as part
+of its public address and do not rename one casually.
