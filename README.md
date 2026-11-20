@@ -48,6 +48,10 @@ Every plugin folder holds `.claude-plugin/plugin.json`, `.codex-plugin/plugin.js
 `.mcp.codex.json` and `skills/`. Each folder is a self-contained plugin, so point a directory
 submission or `claude --plugin-dir` at the plugin folder, never the repo root.
 
-Both marketplace files are generated from the Max Health product catalog, which decides which
-plugins are listed and how they are described. Edit the catalog and regenerate rather than
-changing them by hand; a scheduled check flags any drift.
+Both marketplace files are edited directly in this repo. When you add, rename or describe a
+plugin, update its entry in both files alongside its folder, keep each entry's `name` and
+category in step with the folder's `plugin.json` files, and run `claude plugin validate .`
+before you push.
+
+A private marketplace references these folders via `git-subdir`, so treat a folder name as part
+of its public address and do not rename one casually.
