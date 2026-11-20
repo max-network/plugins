@@ -31,25 +31,21 @@ A plan is only as good as its numbers. Before you place anything, make sure you 
 - door and window widths and heights, window sills, and where each opening sits on its wall.
 
 When one is missing, ask for it. Do not fill in a "typical" value. Ask for the few that matter
-in one short question, and tell the user they can answer in any of three ways:
+in one short question. The user answers right here in the conversation, and you do the edits:
 
-1. **Say or type the measurements.** They go straight into `edit_plan` ops, in millimetres:
+1. **Say or type the measurements.** Put them straight into `edit_plan` ops, in millimetres:
    convert "3.6 m" to `3600` and "24 cm" to `240` yourself and say back what you understood.
-2. **Upload a photo or a sketch.** A photo of the room or a hand sketch attached in the chat is
-   for you to read: take the dimensions written on it into `edit_plan` ops, and ask for any you
-   cannot read. A photo of a paper plan that should be kept as a sheet goes through
-   `request_upload` with purpose `sheet`: give the user the link, or show the QR code on a
-   desktop so they can take the photo with their phone. On that page they mark the sheet's
-   corners and the photo is flattened.
-3. **Upload a document.** A PDF plan or sheet goes in with `add_sheet` (an https `url` or the
-   file as `contentBase64`, with its revision code), or through `request_upload` when the file
-   cannot be passed in the chat. Its printed labels (rooms, grid lines, tags, dimensions) are
-   read automatically.
+2. **Drop a photo, a sketch or a PDF into the chat.** A photo of the room, a hand sketch, a
+   photo of a paper plan or a PDF plan is for you to read: take the dimensions, rooms and
+   openings you see into `create_plan` and `edit_plan` ops, and ask for anything you cannot
+   read. Nothing needs to be uploaded to Kallikrat for this.
 
-After a photo of a paper plan is uploaded, `describe_plan` returns `needsTranscription: true`
-with the flattened image. Read the image and transcribe room names, grid tags, dimensions and
-the scale with `edit_plan` `add_label` and `set_scale` ops (`imagePoint` is a pixel of the
-flattened image). If you cannot see the image, ask the user to attach the photo in the chat.
+`add_sheet` and `request_upload` are only for keeping a document in Kallikrat, for example the
+architect's PDF as the sheet to document the as-built state on, or a phone photo of a paper
+plan the user wants stored as a sheet. After such a photo is stored, `describe_plan` returns
+`needsTranscription: true` with the flattened image; transcribe room names, grid tags and the
+scale with `edit_plan` `add_label` and `set_scale` ops (`imagePoint` is a pixel of the
+flattened image).
 
 When you had to assume anything (a wall thickness, a sill height, a door width), list those
 values and have the user confirm or correct them **before** `issue_revision`. A draft can
@@ -84,8 +80,8 @@ show.
 4. As the crew walks the site, resolve each place they name, then `record_deviation` for what
    was built differently (batch what was said; on a model give the ops for what was built) and
    `confirm_as_planned` for areas built as drawn. Measurements are millimetres; keep the
-   crew's own words as the original note. Site photos for a deviation or an element come in
-   through `request_upload`.
+   crew's own words as the original note. The crew can drop site photos into the chat for you
+   to read; `request_upload` keeps photos attached to a deviation.
 5. `coverage` to say which rooms are still unchecked; repeat step 4 until none are left.
 6. `review_changes` with the site lead (accept, reject or question), then `deviation_report`
    to read back the result. Questioned deviations block issuing.
