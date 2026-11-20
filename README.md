@@ -11,6 +11,7 @@ README.
 | `drypdf` | [`drypdf/`](drypdf/README.md) | Searches, reads, uploads and organizes the PDFs in your DRYPDF account. |
 | `chess` | [`chess/`](chess/README.md) | Plays chess on an interactive board against Stockfish, the model or people in a live lobby, then explains the game. |
 | `scribe` | [`scribe/`](scribe/README.md) | Turns what a patient describes, or a clinical document, into structured records someone checks before anything is saved. |
+| `kallikrat` | [`kallikrat/`](kallikrat/README.md) | Draws and edits construction plans as IFC models, shows them in 3D, records what was built differently and issues revisions. |
 
 ## Install
 
@@ -28,7 +29,7 @@ codex plugin marketplace add max-network/plugins
 codex plugin add <plugin>@max-network
 ```
 
-Replace `<plugin>` with `legal-research`, `dry-codes`, `drypdf`, `chess` or `scribe`, then restart the client.
+Replace `<plugin>` with `legal-research`, `dry-codes`, `drypdf`, `chess`, `scribe` or `kallikrat`, then restart the client.
 
 ## Layout
 
@@ -40,6 +41,7 @@ dry-codes/
 drypdf/
 chess/
 scribe/
+kallikrat/
 ```
 
 Every plugin folder holds `.claude-plugin/plugin.json`, `.codex-plugin/plugin.json`, `.mcp.json`,

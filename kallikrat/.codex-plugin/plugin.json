@@ -1,0 +1,22 @@
+{
+  "name": "kallikrat",
+  "version": "0.1.0",
+  "description": "Construction plans from the conversation. Bundles the kallikrat-plans skill + the hosted Kallikrat MCP server (kallikrat.com) so Codex can draw and edit plans as IFC models, show plan sheets and a live 3D view in the chat, record what was built differently, and issue revisions as PDF, IFC and BCF. Sign in on first use.",
+  "author": { "name": "Maximilian Nussbaumer", "url": "https://kallikrat.com" },
+  "homepage": "https://kallikrat.com",
+  "repository": "https://github.com/max-network/plugins",
+  "license": "UNLICENSED",
+  "keywords": ["construction", "ifc", "bim", "floor-plan", "as-built", "revision", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.codex.json",
+  "interface": {
+    "displayName": "Kallikrat",
+    "shortDescription": "Draw construction plans and document what was built.",
+    "longDescription": "Describe a building and Kallikrat turns it into an IFC model: walls, rooms, doors, windows, slabs, roofs, stairs, terrain and materials, in millimetres. See each storey as a plan sheet or the whole model in 3D inside the chat, import a PDF plan or a photo of a paper one, record what was built differently on site, and issue revisions as PDF, IFC and BCF. Sign in on first use.",
+    "developerName": "Maximilian Nussbaumer",
+    "category": "Productivity",
+    "websiteURL": "https://kallikrat.com",
+    "brandColor": "#1f4e8c",
+    "composerIcon": "./assets/icon.png"
+  }
+}

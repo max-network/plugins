@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "kallikrat",
+  "displayName": "Kallikrat",
+  "description": "Construction plans from the conversation. Bundles the kallikrat-plans skill + the hosted Kallikrat MCP server (kallikrat.com) so any agent can draw and edit plans as IFC models, show plan sheets and a live 3D view in the chat, record what was built differently, and issue revisions as PDF, IFC and BCF. Sign in on first use.",
+  "version": "0.1.0",
+  "author": { "name": "Maximilian Nussbaumer", "url": "https://kallikrat.com" },
+  "homepage": "https://kallikrat.com",
+  "repository": "https://github.com/max-network/plugins",
+  "license": "UNLICENSED",
+  "icon": "./assets/icon.png",
+  "supportUrl": "https://github.com/max-network/plugins/issues",
+  "documentationUrl": "https://github.com/max-network/plugins/tree/main/kallikrat#readme",
+  "keywords": ["construction", "ifc", "bim", "floor-plan", "as-built", "revision", "mcp"]
+}
