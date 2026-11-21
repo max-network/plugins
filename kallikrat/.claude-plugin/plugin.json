@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "kallikrat",
+  "displayName": "Kallikrat",
+  "description": "Your AI drafts the plan. You check it in 2D and 3D. Bundles the kallikrat-planner skill + the hosted Kallikrat MCP server (kallikrat.com) so any agent drafts building plans as real IFC models, from walls and windows to stairs and roofs, from what you say, sketch, photograph or share as a PDF, documents what was built differently on site, and issues revisions as PDF, IFC and BCF. Sign in on first use.",
+  "version": "0.1.0",
+  "author": { "name": "Maximilian Nussbaumer", "url": "https://kallikrat.com" },
+  "homepage": "https://kallikrat.com",
+  "repository": "https://github.com/max-network/plugins",
+  "license": "UNLICENSED",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://kallikrat.com/privacy",
+  "supportUrl": "https://github.com/max-network/plugins/issues",
+  "documentationUrl": "https://kallikrat.com/docs",
+  "termsOfServiceUrl": "https://kallikrat.com/terms",
+  "keywords": ["construction", "building-plans", "ifc", "bim", "floor-plan", "as-built", "revision", "mcp"]
+}
